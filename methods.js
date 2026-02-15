@@ -212,6 +212,9 @@ console.log(car);
 car.color = "blue";
 console.log(car);
 
+
+//create an arr for students to print names 
+
 const students = [
   { names: "ranjith", age: "20", role: "student" },
   { names: "raju", age: "22", role: "farmer" },
