@@ -263,4 +263,3 @@ let arr = [
 Object.values(arr).forEach((name) => {
   console.log(name);
 });
-
