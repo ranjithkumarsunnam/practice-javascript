@@ -212,8 +212,7 @@ console.log(car);
 car.color = "blue";
 console.log(car);
 
-
-//create an arr for students to print names 
+//create an arr for students to print names
 
 const students = [
   { names: "ranjith", age: "20", role: "student" },
@@ -232,41 +231,36 @@ for (let i = 0; i < students.length; i++) {
 //object for employes
 
 const employee = {
-  name:'mahesh',
-  id:'1',
-  role:'admin',
-  salary:'900000',
+  name: "mahesh",
+  id: "1",
+  role: "admin",
+  salary: "900000",
 };
 
-Object.values(employee).forEach(function(name)
-{
+Object.values(employee).forEach(function (name) {
   console.log(name);
-
 });
 
-// vowels in alphabets 
+// vowels in alphabets
 
-let alphabtes ="ranjithkumar sunnamii";
-let vowels="aeiou";
+let alphabtes = "ranjithkumar sunnamii";
+let vowels = "aeiou";
 let count = 0;
-for (let char of alphabtes)
-  {
-  if(vowels.includes(char)){
+for (let char of alphabtes) {
+  if (vowels.includes(char)) {
     count++;
   }
 }
-console.log("number of vowels:",count);
-
+console.log("number of vowels:", count);
 
 //combine array & objects
 
-let arr =[
-  { name:'ranjith',age:'20',role:'admin'},
-  { name:'adhi',age:'22',role:'student'},
-  {name:'sai',age:'25',role:'manager' },
+let arr = [
+  { name: "ranjith", age: "20", role: "admin" },
+  { name: "adhi", age: "22", role: "student" },
+  { name: "sai", age: "25", role: "manager" },
 ];
-Object.values(arr).forEach((name)=>{
+Object.values(arr).forEach((name) => {
   console.log(name);
 });
-
 
