@@ -224,9 +224,6 @@ const students = [
 for (let i = 0; i < students.length; i++) {
   console.log(students[i].names);
 }
-for (let i = 0; i < students.length; i++) {
-  console.log(students[i].names);
-}
 
 //object for employes
 

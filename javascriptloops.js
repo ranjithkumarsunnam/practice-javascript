@@ -92,7 +92,7 @@ obj.forEach((o)=>
    console.log(o.names); //only names
    console.log(o.rollno); //lony rollno's
    console.log(o.dept);//only dept
-   //console.log(o.names,o.rollno,o.dept); //print all values at a time 
+   console.log(o.names,o.rollno,o.dept); //print all values at a time 
    
 });
 
@@ -104,11 +104,78 @@ function greet(name){
 
 //adding a,b numbes 
 
-const add =(a,b)=>{
+const add = (a,b)=> {
    return a+b;
 }
 console.log(add(20,30));
 
+// a number is even or odd check
+
+let num =3;
+if(num%2==0){
+   console.log("even number");
+}else{
+   console.log("Odd number");
+}
 
 
+// multiple numbers from this we can print even ,odd numbers
 
+const num1 =[1,3,5,6,4,7,8];
+for(let i=0; i<num1.length; i++){
+   if(num1[i]%2==0){
+      console.log("Even number");
+   }
+   else{
+      console.log("Odd Numbers");
+   }
+}
+
+// prints array even ,odd number in array using functions
+let number=[1,2,3,5,4,6,8,7,9];
+
+number.forEach((num)=>
+{
+   if(num%2==0){
+      console.log(num+ "even number");
+   }
+   else{
+      console.log(num+ "odd number");
+   }
+});
+
+//largest number from the 3 numbers
+/*const larg =[30,60,100];
+let largest = larg[0];
+for(let num of larg){
+   if(num > largest)
+      {
+       largest =num;
+   }
+}
+console.log("largest:"+largest);
+
+//print the largest elemet using for loop ,inif condition
+
+const numbers =[10,20,30,50,70,90,100];
+
+let largests =numbers[0];
+
+for(let i=1; i<numbers.length; i++){
+   if(numbers[i]>largests){
+      largests =numbers[i];
+
+   }
+}
+console.log("largest:"+largests);
+*/
+
+//prints he largest number in forEach method
+const numbers=[10,20,30,90,80,60];
+let largest =0;
+numbers.forEach((num)=>{
+   if(num>largest){
+      largest=num;
+   }
+});
+console.log("largest:"+largest);
