@@ -179,3 +179,41 @@ numbers.forEach((num)=>{
    }
 });
 console.log("largest:"+largest);
+
+//print 1 to 100 numbers
+for(let i=1; i<=100; i++){
+console.log(i);
+}
+
+//while loop
+
+while(i<=100){
+   console.log(i);
+   i++;
+}
+
+//reverse the string using split,reverse method
+let str="ranjithkumar";
+str.split();
+console.log(str.split("").reverse());
+
+//sum of first 10 numbers
+
+let sum=10;
+for(let i =1; i<=10; i++){
+   sum = sum+i;
+}
+console.log("sum of first 10 numbers:"+sum);
+
+//count vowels in a string
+let alpa="sunnamranjithkumar";
+let vowels="aeiou";
+let count =0;
+for(let char of alpa){
+   if(vowels.includes(char)){
+      count++;
+      }
+}
+console.log(count);
+
+
