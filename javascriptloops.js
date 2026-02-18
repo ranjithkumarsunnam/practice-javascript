@@ -145,15 +145,15 @@ number.forEach((num)=>
 });
 
 //largest number from the 3 numbers
-/*const larg =[30,60,100];
-let largest = larg[0];
+const larg =[30,60,100];
+let largest1 = larg[0];
 for(let num of larg){
-   if(num > largest)
+   if(num > largest1)
       {
-       largest =num;
+       largest1 =num;
    }
 }
-console.log("largest:"+largest);
+console.log("largest:"+largest1);
 
 //print the largest elemet using for loop ,inif condition
 
@@ -168,17 +168,19 @@ for(let i=1; i<numbers.length; i++){
    }
 }
 console.log("largest:"+largests);
-*/
+
+
 
 //prints he largest number in forEach method
-const numbers=[10,20,30,90,80,60];
+const numberss=[10,20,30,90,80,60];
 let largest =0;
-numbers.forEach((num)=>{
+numberss.forEach((num)=>{
    if(num>largest){
       largest=num;
    }
 });
 console.log("largest:"+largest);
+
 
 //print 1 to 100 numbers
 for(let i=1; i<=100; i++){
@@ -194,16 +196,18 @@ while(i<=100){
 
 //reverse the string using split,reverse method
 let str="ranjithkumar";
-str.split();
-console.log(str.split("").reverse());
+string1=str.split('').reverse();
+console.log(string1);
 
 //sum of first 10 numbers
 
-let sum=10;
+let sum=0;
 for(let i =1; i<=10; i++){
    sum = sum+i;
 }
 console.log("sum of first 10 numbers:"+sum);
+
+
 
 //count vowels in a string
 let alpa="sunnamranjithkumar";
@@ -215,5 +219,21 @@ for(let char of alpa){
       }
 }
 console.log(count);
+
+
+
+//vowels in string
+
+let alphabet="sunnamranjithkumar";
+let vowelss="aeiou";
+let counts =0;
+for(let i=0; i<alphabet.length; i++){
+   if(vowels.includes(alphabet)){
+      count++;
+      }
+}
+console.log(count);
+
+
 
 
