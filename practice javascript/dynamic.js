@@ -19,7 +19,7 @@ Update.innerHTML = "<p>welcome to my show</p>";
 
 */
 let elementCount = 0;
-CreateElementBtn.addEventListener('click', () => {
+CreateElementBtn.addEventListener("click", () => {
   elementCount++;
   const newpPragraph = document.createElement("p");
 
@@ -33,5 +33,3 @@ DeleteFirstElementBtn.addEventListener("click", () => {
     ElementsContainer.removeChild(ElementsContainer.children[0]);
   }
 });
-
-
