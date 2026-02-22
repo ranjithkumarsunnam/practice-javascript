@@ -12,6 +12,7 @@ buttonTask.addEventListener("click", () => {
   checkbox.type = "checkbox";
   const span = document.createElement("span");
   span.textContent = taskContent;
+  
   const deleteButton = document.createElement("button");
   deleteButton.innerHTML = "&#10060";
   li.appendChild(checkbox);
@@ -32,3 +33,31 @@ buttonTask.addEventListener("click", () => {
     li.remove();
   });
 });
+
+const tasksremaining = document.getElementById("tasks-remaining");
+function updateTasksRemaining() {
+  const totalTasks = taskList.children.length;
+  const completedTasks = taskList.querySelectorAll("input[type='checkbox']:checked").length;
+  const remainingTasks = totalTasks - completedTasks;
+  tasksremaining.textContent = `Tasks Remaining: ${remainingTasks}`;
+}
+taskList.addEventListener("change", updateTasksRemaining);
+taskList.addEventListener("click", (event) => {
+  if (event.target.tagName === "BUTTON") {
+    updateTasksRemaining();
+  }
+});
+
+const taskscompleted = document.getElementById("tasks-completed");
+function updateTasksCompleted() {
+  const completedTasks = taskList.querySelectorAll("input[type='checkbox']:checked").length;
+  taskscompleted.textContent = `Tasks Completed: ${completedTasks}`;
+}
+taskList.addEventListener("change", updateTasksCompleted);
+taskList.addEventListener("click", (event) => {
+  if (event.target.tagName === "BUTTON") {
+    updateTasksCompleted();
+  }
+});
+
+
