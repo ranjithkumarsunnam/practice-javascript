@@ -7,7 +7,7 @@
 // 5.document.querySelectorAll() //NODE LIST
 
 //using id of html
-const myBox = document.getElementById("myBox");
+/*const myBox = document.getElementById("myBox");
 const mybtn = document.getElementById("myBtn");
 
 //mouse click event
@@ -29,7 +29,7 @@ mybtn.addEventListener("mouseout",event =>{
     myBox.textContent ="thankYou";
 
 });
-
+*/
 
 //changing the bg color for headdings and list items usin diff methods->ex: for,array
 //tagname in html
