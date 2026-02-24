@@ -4,10 +4,10 @@ console.log(fruites[0]); // print index '0'
 console.log(fruites.push("mango")); // push new item into array 'mango'
 console.log(fruites.pop()); //removing the last item in array
 console.log(fruites.includes("apple")); //apple includes(present) or not in array
-console.log(fruites.shift());
-console.log(fruites.unshift("new fruit"));
-console.log(fruites.indexOf("banana"));
-console.log(fruites.length);
+console.log(fruites.shift()); //ll remove the first item 
+console.log(fruites.unshift("new fruit")); //add the first item
+console.log(fruites.indexOf("banana")); //indexOf banana
+console.log(fruites.length); //finding the length of fruites
 
 //creating an array using student names
 const StudentsNames = ["ramu", "raki", "raja", "ranjith", "vishwa"];

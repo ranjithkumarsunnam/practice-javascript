@@ -4,7 +4,7 @@ const taskList = document.getElementById("task-list");
 buttonTask.addEventListener("click", () => {
   const taskContent = inputField.value.trim();
   if (taskContent === "") {
-    alert("Please enter a task");
+   // alert("Please enter a task");
     return;
   }
   const li = document.createElement("li");

@@ -1,0 +1,17 @@
+#myBox{
+    background-color: seagreen;
+    height: 250px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    line-height: 250px;
+}
+.fruites{
+    background-color: rgb(89, 200, 37);
+    height: 250px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    line-height: 250px;
+
+}
