@@ -52,10 +52,10 @@ Array.from(lielements).forEach(lielement =>{
 
 
 //query selector in html
-const elements=document.querySelector("h4");
+const elements=document.querySelector("li");
 elements.style.backgroundColor ="yellow";
 
-const Fruites = document.querySelector("li");
+const Fruites = document.querySelectorAll("li");
 Fruites.forEach(fruite => {
     fruite.style.backgroundColor="tomato";
 });
