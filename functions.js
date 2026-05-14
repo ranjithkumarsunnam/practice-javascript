@@ -1,99 +1,38 @@
-//named function examples
-//ex 1
-
-function add(a, b) {
-  return a + b;
+/* //Normal function
+function SayHello(name){
+    console.log("Hello "+name);
 }
-console.log(add(2, 5));
-
-//even or odd number example
-
-function checkEvenOdd(num) {
-  // for (i=0; i<num.lenght; i++){
-
-  if (num % 2 == 0) {
-    return "even";
-  } else {
-    return "odd";
-  }
-}
-console.log(checkEvenOdd(1));
-console.log(checkEvenOdd(5));
-
-//example 3  largest number
-
-function FindLargest(a, b) {
-  if (a > b) {
-    return a;
-  } else {
-    return b;
-  }
-}
-console.log(FindLargest(29,25))
-
-//factioial function ex 4
-
-function Factorial (n){
-    let result =1;
-    for(i=1; i<=n; i++)
-        {
-        result=result*i;
-    }
-    return result;
-}
-console.log(Factorial(4))
-
-//prime number ex 5
-
-function PrimeNumber(n){
-    if(n<=1){
-        return false;
-    }
-    for(let i=2; i<=n; i++){
-        if(n%2===0){
-            return false;
-        }
-
-        return true;
-    }
-}
-console.log(PrimeNumber(2));
-
-//square of num ex 6
+SayHello("Ranjith Kumar");
 
 
-function Square(num){
-    return num*num;
-}
-console.log(Square(3))
-
-
-
-//function reverse a sting example 7
-
-function ReverseString(str){
-    return str.split("").reverse().join(",");
+//Arrow Function
+const greet=(name)=>{
+    console.log("Greetings "+name);
 
 }
-console.log(ReverseString("Ranjith"))
+greet("Ranjith Kumar");
 
-//function count vowels
 
-function countVowels(str){
-    let count =0;
-    let vowels ="aeiou";
-    for(let i= 0; i<str.length; i++){
-        if(vowels.includes(str[i])){
-            count++;
-        }
-    }
-    return count;
+let personOne ={
+    name:'Ranjith Kumar',
+    age:'28'
 }
-console.log(countVowels("ranjithkumar"))
+console.log(personOne.name); */
 
 
-function changeText(){
-    document.getElementById("demo").innerText ="welcome nithin";
+//JSON normal object format
+let object1={
+    name:'X',
+    age:'20',
+    DOB:'5/10/1995'
 }
+console.log(typeof object1);
+
+// conver from normal object to JSON STRING FORMAT 
+let stringifiedObject =JSON.stringify(object1);
+console.log(typeof stringifiedObject);
 
 
+//Again convert from JSON string to normal object format
+let parseObject=JSON.parse(stringifiedObject);
+console.log(typeof parseObject);
