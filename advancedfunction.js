@@ -59,3 +59,31 @@ console.log(countries);
 /* for (let i=0; i<countrys.length; i++){
     console.log(countrys[i]);
 } */
+
+
+
+
+//Objects in JavaScript
+
+//Object is car
+const Car={
+     name:'BMW',
+     model:'X series',
+     varity:'petrol',
+     start:function(){
+    console.log("car is sarted");
+     },
+     horn:function(){
+        console.log("krrrrrrrrrrrr");
+
+     }
+    }
+console.log(Car.model);
+console.log(Car.name);
+console.log(Car.varity);
+console.log(Car)
+
+//Calling the Function
+Car.start();
+Car.horn();
+
