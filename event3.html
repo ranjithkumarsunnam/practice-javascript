@@ -8,27 +8,73 @@
 <body>
     <h2>Simple Form Submission</h2>
     
-    <form id="form">
-        <input type="text" id="input" placeholder="Enter text" oninput="input(this)">
-        <button onsubmit="submit()" type="submit">Submit</button>
+    <form id="form" onsubmit="Submit(event)">
+        <input type="text" id="input" placeholder="Enter text" oninput="Input(this)">
+        <button type="submit">Submit</button>
     </form>
 
 
     <script>
-        const form = document.getElementById('form');
-        const input = document.getElementById('input');
-        const result = document.getElementById('result');
-        
-        form.addEventListener('submit', function(event) {
+        function Input(thisInput) {
+            console.log(thisInput.value);
+        }
+
+        function Submit(event) {
             event.preventDefault();
-            
-            let value = input.value;
-            // result.innerText = "";
-            
+
+            const input = document.getElementById('input');
+            const value = input.value;
+
             console.log(value);
-            
             input.value = '';
-        });
+        }
+
+        // const form = document.getElementById('form');
+        // const input = document.getElementById('input');
+
+        // //new input filed is creaed in html using js
+        //  let inputField=document.createElement("input");
+        //     inputField.type="text";
+        //     inputField.placeholder="Enter data";
+        //     form.appendChild(inputField);
+
+        //     //new b=uuton was crerated in html using js
+        // let newBtn=document.createElement('button');
+        //     newBtn.innerText="Submit";
+        //     form.appendChild(newBtn);
+
+        //     newBtn.addEventListener("click",function(e){
+        //         e.preventDefault();
+
+        //         const value=inputField.value;
+        //         console.log(value);
+        //         inputField.value=""
+
+
+
+        //     })
+
+            
+        // form.addEventListener('submit', function(event) {
+        //     event.preventDefault();
+
+        //     const value = input.value;
+
+        //    console.log(value);
+
+        //     input.value = '';
+
+        //     //input value is showing in the console and showing in web page as well
+        //     let message=document.createElement("p");
+        //     message.textContent = "Message is:"+ value;//input value is assign to message
+
+        //     form.appendChild(message);
+
+    
+        // });
+
+
+
     </script>
     
 </body>
