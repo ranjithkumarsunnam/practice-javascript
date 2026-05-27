@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter name" ><br><br>
+    <input type="text" id="password" placeholder="Enter Password"><br><br>
+
+    <script>
+        const Name=document.getElementById("name");
+        const Password=document.getElementById("password");
+
+        Name.addEventListener("input",
+        function(){
+             console.log("line number 16: " +this.value);
+                console.log("line number 16: " +Name.value);
+
+        });
+
+        Password.addEventListener("input",
+        function(event){
+            console.log("Line number 25:" + event.target.value);
+        });
+
+
+       //button is Directly created using js and added to body of html
+        const Add =document.createElement("button");
+        Add.innerText="CLICK";
+        document.body.appendChild(Add);
+
+
+        Add.addEventListener("click",
+        function(){
+
+            const name=Name.value;
+            const pass=Password.value;
+            //After click the button to submit the form input values is cleared
+            Name.value="";
+            Password.value="";
+
+
+            console.log(name+pass);
+            console.log("Submitted")
+        });
+
+    </script>
+    
+</body>
+</html>
