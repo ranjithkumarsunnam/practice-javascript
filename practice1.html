@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Enter UserName">
+    <button onclick="login()">Login</button>
+    <h3 id="output"></h3>
+
+
+
+    <button onclick="checkbalance()">Checkbalance</button>
+    <h2 id="balance" ></h2>
+
+
+    <button onclick="orderfood()">Order Food</button>
+    <p id="food"></p>
+
+    <button onclick="increaseLikes()">Likes</button>
+    <h3 id="likes">0 Likes</h3>
+
+    <script>
+        let count=0;
+        function increaseLikes(){
+            count++;
+        
+            document.getElementById("likes").innerHTML= "Likes "+count;
+        }
+    </script>
+
+
+    <script>//username login
+        function login(){
+            let username=document.getElementById("username").value;
+
+            document.getElementById("output").innerHTML="welcome "+username;
+
+        }
+    </script>
+
+    <script>//checkbalance
+
+    let amount=250000;
+    function checkbalance()
+    {
+        document.getElementById("balance").innerHTML="Available Balance :" +amount;
+
+    }
+
+    </script>
+    
+
+
+<script>//Food Order
+function orderfood(){
+    document.getElementById("food").innerHTML="Pizza Ordered  Successfully";
+}
+
+
+</script>
+    
+</body>
+</html>
