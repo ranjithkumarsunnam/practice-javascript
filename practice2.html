@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="num1" placeholder="First Number">
+    <input type="number" id="num2" placeholder="Second Number">
+
+    <button onclick="add()">Add</button>
+    <h3 id="answer" ></h3>
+
+    <script>
+        function add(){
+            let num1 =parseInt(document.getElementById("num1").value);
+            let num2 =parseInt(document.getElementById("num2").value);
+
+            let total= num1 + num2;
+            document.getElementById("answer").innerHTML=total;
+            
+        }
+    </script>
+    
+</body>
+</html>
