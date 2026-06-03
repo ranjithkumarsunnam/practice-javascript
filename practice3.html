@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+</head>
+<body>
+
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+
+    <h3 id="output"></h3>
+
+    <script>
+
+        const users =[
+           [ "admin", "password"],
+            [ "ranjith", "ranjith123"],
+            ["adhrash","adhrash123"]
+           ];
+
+        // const user=document.getElementById("name");
+
+        // const pass=document.getElementById("password");
+
+        function login(){
+            // if(user.value=="" && pass.value==""){
+            //     document.getElementById("output").innerHTML="Login Successfull";
+            //     user.value="";
+            //     pass.value="";
+            // }
+            // else{
+            //     document.getElementById("output").innerHTML="Login Failed";
+            // }
+            const user=document.getElementById("name");
+            const pass=document.getElementById("password");
+
+
+           
+            for(let i=0; i<users.length; i++){
+                if(user.value===users[i][0] && pass.value===users[i][1]){
+                    document.getElementById("output").innerHTML="Login Successful";
+                    user.value="";
+                    pass.value="";
+                    return;
+                
+                }
+                else{
+                    document.getElementById("output").innerHTML="Login Failed";
+
+                }
+            }
+
+
+
+        }
+    </script>
+    
+
+</body>
+</html>
