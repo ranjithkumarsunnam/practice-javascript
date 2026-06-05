@@ -8,12 +8,39 @@
 <body>
 
     <button  onclick="darkmode()">Darkmode</button>
+    <h1>Hello EveryOne</h1>
+
+    <button onclick="showMarks()">Show Marks</button>
+    <p id="result"></p>
+
+     <script>
+        function showMarks(){
+           /*  let english=20;
+            let Maths=30;
+            let Science=50;
+
+            let total=english+Maths+Science; */
+            let total=[10,20,30];
+             let sum=0;
+            for(let i=0; i<total.length; i++){
+                sum =sum + total[i];
+            }
+           
+
+            document.getElementById("result").innerHTML="Total Marks:" +sum;
+        }
+
+
+    </script>
+
 
     <script>
         function darkmode(){
-            if(document.body.style.backgroundColor==="black"){
+            if(document.body.style.backgroundColor==="black")
+            {
                 document.body.style.backgroundColor="white";
-                document.body.style.color="black";
+                document.body.style.color="green";
+                // document.body.style.color="black";
 
 
             }
@@ -25,7 +52,10 @@
             
 
         }
+ 
     </script>
+
+
     
 </body>
 </html>
