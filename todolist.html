@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <input type="text" id="task" placeholder="Enter task">
+    <button onclick="addtask()">Add Task</button>
+    <ul id="list"></ul>
+    <script>
+        
+        function addtask(){
+        const Task=document.getElementById("task").value;
+        //If Task is clicked I will  not retrn anything on on InnerHtml  
+        if(Task===""){
+            return;
+        }
+        const List=document.getElementById("list");
+
+            let li= document.createElement("li");
+            li.innerHTML=Task;
+             List.appendChild(li);
+            document.getElementById("task").value="";
+
+
+           //button in Html
+           let Button =document.createElement("button");
+           Button.innerHTML="Delete";
+
+           Button.onclick=function(){
+            li.remove();
+           };
+           li.appendChild(Button);
+
+
+
+
+            
+        }
+
+    </script>
+</body>
+</html>
