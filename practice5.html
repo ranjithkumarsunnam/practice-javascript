@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 5</title>
+</head>
+<body>
+    <p id="demo">Remove </p> 
+    
+    <button onclick="removeText()"> Delete</button>
+    <script>
+        function removetext(){
+            document.getElementById("demo").remove();
+        }
+    </script>
+
+
+<ul id="list"></ul>
+<input type="text" id="item" placeholder="Enter Task">
+
+<button onclick="addItem()">Add Item</button>
+
+<script>
+
+    function addItem(){
+
+         const itemValue=document.getElementById("item").value="";
+        if(itemValue ===""){
+            return;
+        }
+
+        let li=document.createElement("li");
+        li.innerHTML=itemValue;
+        document.getElementById("list").appendChild(list);
+       // li.remove();
+
+
+
+
+    }
+</script>
+    
+    
+</body>
+</html>
