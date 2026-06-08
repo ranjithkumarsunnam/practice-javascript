@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <!-- <button onclick="showTime()">Show Time</button> -->
+    <p id="time"></p>
+    <script>
+        function showTime(){
+            //let CurrentTime=new Date().toLocaleTimeString();
+             //document.getElementById("time").innerHTML=CurrentTime;
+            document.getElementById("time").innerHTML=new Date().toLocaleTimeString();
+        }
+        setInterval(showTime,1000); ///1000 is MilliSeconds calling the show time function)
+        showTime();
+
+    </script>
+    
+</body>
+</html>
