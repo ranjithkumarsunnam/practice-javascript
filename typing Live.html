@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Live</title>
+</head>
+<body>
+    <input type="text" id="textBox" placeholder="Enter" onkeyup="showText()">
+    <h2 id="output" ></h2>
+    <script>
+        function showText(){
+            let textBox=document.getElementById("textBox").value.trim();
+           document.getElementById("output").innerHTML=textBox;
+
+        }
+    </script>
+
+    <input type="number" id="age" placeholder="Enter age">
+    <button onclick="checkAge()">checkAge</button>
+    <h3 id="Output"></h3>
+
+    <script>
+       // let Age=document.getElementById("age").value;
+        function checkAge(){
+             let Age=document.getElementById("age").value.trim();
+
+             if(Age === ""){
+                document.getElementById("Output").innerHTML="";
+                return;
+             }
+
+            if(Age>=18){
+                document.getElementById("Output").innerHTML="Eligible";
+
+            }else{
+                document.getElementById("Output").innerHTML="Not Eligible";
+
+            }
+        }
+    </script>
+</body>
+</html>
