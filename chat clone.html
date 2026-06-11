@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Char Clone</title>
+</head>
+<body>
+
+    <input type="text" id="message" placeholder="Type Message">
+    <button onclick="sendMessage()">Send</button>
+    <div id="chat"></div>
+    <script>
+        function sendMessage(){
+            let msg=document.getElementById("message").value;
+            let p =document.createElement("p");
+
+            p.innerHTML=msg;
+
+            document.getElementById("chat").appendChild(p);
+
+            document.getElementById("meggade").value="";
+
+
+
+        }
+    </script>
+</body>
+</html>
