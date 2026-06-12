@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE</title>
+</head>
+<body>
+    <input type="text" id="fruits">
+    <button id="addBtn">Add</button>
+    <ul id="list" ></ul>
+    <script>
+        let Fruits=document.getElementById("fruits");
+        let Btn=document.getElementById("addBtn");
+        let List=document.getElementById("list");
+        let li=document.createElement("li");
+        let deleteBtn=document.createElement("button");
+
+        Btn.addEventListener("click",function(){
+            if(Fruits.value===""){
+                return;
+            }
+            // let li=document.createElement("li");
+            li.textContent=Fruits.value;
+            List.appendChild(li);
+            Fruits.value="";
+
+           // let deleteBtn=document.createElement("button");
+            deleteBtn.textContent="Delete";
+            li.appendChild(deleteBtn);
+            deleteBtn.addEventListener("click",function(){
+                List.removeChild(li);
+            })
+
+        })
+    </script>
+    
+</body>
+</html>
