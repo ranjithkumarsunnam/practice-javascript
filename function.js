@@ -58,3 +58,97 @@ console.log(cart);
 //console.log(addCart(5));
 
 
+//Check Login
+
+function checkLogin(username,password){
+    return username ==="admin" && password==="1234";
+}
+console.log(checkLogin("admin" ,"1234"));
+console.log(`Login SuccessFull: ${checkLogin("admin","1234")}`);
+
+
+//Character Counter
+
+function countCharacter(text){
+    return text.length;
+
+}
+console.log( typeof countCharacter("ranjith Kumar"));
+
+
+//FindSquare Numbers
+
+function findSquare(){
+    for(let i=0; i<10; i++){
+        console.log(i*i);
+    }
+}
+findSquare();
+
+//find Cube Number
+function CubeNum(num){
+    return num*num*num;
+
+}
+console.log("Cube Number is:",CubeNum(3));
+
+function cubesofNumbers(){
+    for(let i=0; i<5; i++){
+        console.log("Cube Numbers",i*i*i)
+    }
+}
+cubesofNumbers();
+
+function isPostive(num){
+   return num>0
+}
+console.log(isPostive(20));
+console.log(isPostive(-20));
+
+//Addition of Two numbers
+function Add(a,b){
+    return a+b;
+}
+console.log("Sum of two numbers:",Add(2,8));
+
+
+//from array find the sum of all numbers
+function sumOfArray(array){
+    let sum=0;
+    for(let i=0; i<array.length; i++){
+        sum+=array[i];
+    }
+    return sum;
+}
+console.log("sum Of Array:",sumOfArray([1,2,3,4,5]))
+
+//Finding the largest number from array
+
+function LargestNumArray(array){
+    let largest=array[0];//Assuming the largest number is it
+
+    for(let i=1; i<array.length; i++){
+        if(array[i]>largest){
+            largest=array[i];
+
+        }
+    }
+
+    return largest;
+}
+console.log("largest number:",LargestNumArray([5,6,6,78,894,5]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
