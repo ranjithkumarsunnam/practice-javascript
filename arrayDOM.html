@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Using DOM</title>
+</head>
+<body>
+    
+    <h1>ARRAY USING DOM</h1>
+    <input type="text" id="nameInput">
+    <button onclick="addName()"> ADD</button>
+    <ul id="nameList" style="list-style-type: none;"></ul>
+
+    <script>
+        let names=[]; // array was created
+        function addName(){
+            let name=document.getElementById("nameInput").value;
+             /* if(name===""){
+                return;
+            }  */
+            names.push(name);
+            console.log(names);
+            let li=document.createElement("li");
+            li.innerHTML=name;
+            document.getElementById("nameList").appendChild(li);
+            document.getElementById("nameInput").value="";
+
+            let button =document.createElement("button");
+            button.innerText="Delete";
+
+            li.appendChild(button);
+
+            button.addEventListener("click",function(){
+                li.remove();
+            })
+
+        }
+    </script>
+    
+</body>
+</html>
