@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Last Element is Delteted</h1>
+    <button onclick="removeLast()">Remove Button
+    </button>
+    <p id="result"></p><h2 id="items"></h2>
+
+    <script>
+        let fruites=['apples','mango','banana','grapes'];
+
+        function removeLast(){
+           //+ fruites.push("guva");
+            fruites.pop();
+            
+            document.getElementById("result").innerHTML=fruites.join(",");
+            document.getElementById("items").innerHTML=fruites.length;
+
+        }
+    </script>
+    
+</body>
+</html>
