@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Events In Javascript</h1>
+    <p>Types of Events</p>
+    <p>Click, Typing, Hover, Submit</p>
+    <h3>This is Click Event Method 1</h3>
+    <button onclick="showMsg()">Click Me</button>
+
+    <script>
+function showMsg(){
+  alert("Button Is Clicked!");
+
+}
+    </script>
+
+
+
+    <h3> Method 2 Click Event</h3>
+    <button id="btn">Click Me</button>
+
+    <script>
+        const button =document.getElementById("btn");
+        button.addEventListener("click",function(){
+            alert("Button is Clicked!");
+            console.log("Button is Clicked!");
+        })
+    </script>
+
+
+<h1>Typing Event in JS this more Imp For big Projects</h1>
+
+<input type="text" id="nameBox" placeholder="Type Here">
+
+<script>
+    let Input =document.getElementById("nameBox");
+
+    Input.addEventListener("input",function(){
+        if(Input==""){
+            return;
+        }
+
+        
+        console.log(this.value);
+    });
+
+</script>
+<h1>Hover Event </h1>
+<h3>onmouseover</h3>
+<h3>onmouseout</h3>
+
+<h1 onmouseover="changeColor(this)" onmouseout="resetColor(this)">Hover Me</h1>
+<script>
+    function changeColor(element){
+        element.style.color="red";
+    }
+        function resetColor(element){
+            element.style.color="black";
+        }
+</script>
+
+
+<h3 id="title">Method 2 Important</h3>
+<script>
+    let title=document.getElementById("title");
+    title.addEventListener("mouseover",function(){
+        title.style.color="red";
+    })
+    title.addEventListener("mouseout",function(){
+        title.style.color="black";
+    })
+</script>
+
+
+<h1>Form Submit</h1>
+<form id="formInput">
+    <input type="text" placeholder="Enter Name" id="name">
+    <button type="submit">Submit</button>
+</form>
+<script>
+    let forminput=document.getElementById("formInput");
+    forminput.addEventListener("submit",function(e){
+        e.preventDefault();
+        //console.log(forminput); 
+
+        let name=document.getElementById("name").value.trim();
+        //console.log(name);
+         console.log(name);
+         document.getElementById("name").value="";
+
+    })
+
+</script>
+ 
+
+
+
+
+
+
+
+
+     
+</body>
+</html>
