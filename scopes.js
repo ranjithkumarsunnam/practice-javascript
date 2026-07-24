@@ -232,7 +232,10 @@ function parameter(par){
 }
 parameter("ranjith");
 
-//globsl + function
+
+
+
+//global + function
 
 let male="ranjith";
 function Gender(){
@@ -242,6 +245,10 @@ function Gender(){
 
 }
 Gender();
+
+
+
+
 
 let num=10;
 function test(){
