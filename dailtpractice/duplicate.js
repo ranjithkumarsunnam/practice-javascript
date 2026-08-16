@@ -17,8 +17,6 @@ let arr = [10,20,40,30,20,5,5];
 
 
 
-
-
  // Missing Number
  let numbers = [1, 2, 3, 5, 6];
 let expectedSum = 0;
@@ -34,3 +32,23 @@ for (let i = 0; i < numbers.length; i++) {
 
 let missing = expectedSum - actualSum;
 console.log("Missing Number:", missing);
+
+
+
+
+//Shiftting the  0 to end of the array
+let array = [0,5,0,3,8,0,2];
+let result =[];
+let count =0;
+for(let i =0; i<array.length; i++){
+    if(array[i]===0){
+        count++;
+    }
+    else{
+        result.push(array[i]);
+    }
+}
+for(let i=0;i<count;i++){
+    result.push(0);
+}
+console.log(`Total result: ${result}`);
