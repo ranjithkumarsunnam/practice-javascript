@@ -52,3 +52,35 @@ for(let i=0;i<count;i++){
     result.push(0);
 }
 console.log(`Total result: ${result}`);
+
+
+
+
+//Check weather the array is sorted or not 
+let arr = [100,20,40,80,60,70];
+let isSorted = true;
+for(let i =0; i<arr.length; i++){
+    if(arr[i]>arr[i+1]){
+        isSorted = false;
+        break;
+    }
+}
+if(isSorted){
+    console.log("Array is Sorted")
+}
+else{
+    console.log("Array is not Sorted")
+}
+
+
+for(let i =0; i<arr.length; i++){
+    for(let j=i+1; j<arr.length; j++){
+        if(arr[i]>arr[j]){
+           let  temp =arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        
+        }
+    }
+}
+console.log(arr)
