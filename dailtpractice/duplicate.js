@@ -72,7 +72,7 @@ else{
     console.log("Array is not Sorted")
 }
 
-
+//sorting the array in ascending order
 for(let i =0; i<arr.length; i++){
     for(let j=i+1; j<arr.length; j++){
         if(arr[i]>arr[j]){
@@ -83,4 +83,27 @@ for(let i =0; i<arr.length; i++){
         }
     }
 }
-console.log(arr)
+console.log(arr);
+
+
+
+
+//finding the first repeating number
+const numbers = [2, 5, 1, 2, 3, 5];
+
+let repeatingNumber = -1;
+
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+        if (numbers[i] === numbers[j]) {
+            repeatingNumber = numbers[i];
+            break;
+        }
+    }
+
+    if (repeatingNumber !== -1) {
+        break;
+    }
+}
+
+console.log(repeatingNumber);
